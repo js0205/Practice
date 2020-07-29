@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>CC98论坛</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/98icon.ico" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div class="main-container">
+            <div class="header">
+                <div class="topBar-mainPage">
+                    <div class="topBarRow">
+                        <div class="row">
+                            <div class="topBarLogo">
+                                <a href="/">
+                                    <img src="./images/98LOGO.ico">
+                                </a>
+                            </div>
+                            <div class="topBarCC98">
+                                <a href="/">CC98论坛</a>
+                            </div>
+                            <div class="topBarText">|</div>
+                            <div class="topBarText">版面列表</div>
+                            <div class="topBarText">新帖</div>
+                            <div class="topBarText">关注</div>
+                            <div id="search">
+                                <div class="box">
+                                    <div class="searchBoxSelect">主题</div>
+                                    <div class="caret-down">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </div>
+                                    <input id="searchText" type="text" placeholder="请输入搜索内容">
+                                    <div class="searchIco">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topBarRight">
+                            <div class="topBarUserInfo">
+                                <div class="topBarMessage">
+                                    <div class="topBarBell">
+                                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="topBarUserImg">
+                                    <img src="./images/default_avatar_boy.png">
+                                </div>
+                                <div class="topBarUserName">ASDFGH</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainPage">
+                <div class="leftPart">
+                    <div class="announcement">
+                        <div class="mainPageTitle1">
+                            <div class="mainPageTitleRow">
+                                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                <div class="mainPageTitleText" style="flex-grow: 1;">全站公告</div>
+                            </div>
+                        </div>
+                        <div class="announcementContent">
+                            <article>
+                                <div>[2020.07.26]　CC98虚拟主播：高考志愿填报经验　详情请戳 聊聊浙大各种专业　详情请戳</div>
+                                <div>[2020.07.20]　2020年CC98×NexusHD纪念版站衫订购通知　详情请戳 </div>
+                                <div>[2020.07.04]　暑假通知汇总　详情请戳 </div>
+                                <div>[2020.07.04]　论坛假期管理办法　详情请戳</div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="recommendedReading">
+                        <div class="mainPageTitle2">
+                            <div class="mainPageTitleRow">
+                                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                <div class="mainPageTitleText">推荐阅读</div>
+                            </div>
+                        </div>
+                        <div class="recommendedReadingContent">
+                            <div class="recommendedReadingImage">
+                                <img src="./images/_心灵之约.png" alt="">
+                            </div>
+                            <div class="column">
+                                <div class="recommendedReadingTitle">
+                                    关于互联网行业35岁问题的一些思考
+                                </div>
+                                <div class="recommendedReadingAbstract">
+                                    无论如何，还是要认真的思考和规划未来的职业发展。认真规划，准备好退路。
+                                </div>
+                                <div class="recommendedReadingButtons">
+                                    <div class="recommendedReadingButtonSelected"></div>
+                                    <div class="recommendedReadingButton"></div>
+                                    <div class="recommendedReadingButton"></div>
+                                    <div class="recommendedReadingButton"></div>
+                                    <div class="recommendedReadingButton"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="mainPageList">
+                            <div class="mainPageTitle1">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">热门话题</div>
+                                </div>
+                                <div class="mainPageTitleRow">
+                                    <div class="mainPageTitleText">本周</div>
+                                    <div class="mainPageTitleText">本月</div>
+                                    <div class="mainPageTitleText">历史上的今天</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent1">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[似水流年]</div>
+                                    <div class="mainPageListTitle">刚刚和爸爸打完电话，好难过呀</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[似水流年]</div>
+                                    <div class="mainPageListTitle">各位大神起名字</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[心灵之约]</div>
+                                    <div class="mainPageListTitle">大家婚后愿意和老一辈长期住一起吗</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[缘分天空]</div>
+                                    <div class="mainPageListTitle">【男征女】来不及认真地年轻过，就让我们一起认真地老去</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[心灵之约]</div>
+                                    <div class="mainPageListTitle">记失落的第一次</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[缘分天空] </div>
+                                    <div class="mainPageListTitle">【女征男】95年初中教师港大小姐姐真诚交友啦</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[感性空间]</div>
+                                    <div class="mainPageListTitle">公交车上鼓足勇气找xjj要联系方式之后，感觉好多了</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[开怀一笑]</div>
+                                    <div class="mainPageListTitle">“我准备向喜欢的人告白了”</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[学习天地]</div>
+                                    <div class="mainPageListTitle">求问浙江大学城市学院怎么样</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageBoardName">[感性空间]</div>
+                                    <div class="mainPageListTitle">师兄师姐又该讨厌我了</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainPageList">
+                            <div class="mainPageTitle1">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">校园活动</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent1">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">[浙大移动校园卡]29元月租 | 赠送视频会员| 震撼来袭</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">足协版抖肩舞来啦，9898，踢球去～</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">新航道 | 浙大双保险计划！升学有保障！</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">它来了，【中兴通讯】浙大优招专场宣讲来啦！</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">[E志者协会] 活动预告 | 学园维修</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">BeBeyond | 经济学专业，如何拿到硕士全奖；去剑桥做学术？</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">浙大教益×至美公益联合举办的乡村学生线上1v1辅导老师志愿者招募开始啦！</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">初创于浙大的WithYou社区是一个怎样的存在?</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">【中海创意设计大赛】3w现金大奖、offer等你拿！ 7月28日截止</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">本学期最后一次玉泉英语角来啦！</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mainPageList">
+                            <div class="mainPageTitle2">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">学术信息</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent2">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        浙江大学百人计划研究员-浙江大学韧性城市研究中心-王乃玉老师团队招收21级硕士、博士研究生
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        计算机学院2020飞跃手册
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【招生宣传】香港科技大学计算机科学与工程系2021年研究生提前批招生正式启动！
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        浙江大学海洋学院 海洋电子与智能系统研究所 徐志伟教授团队 招收硕士、博士
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        [求助Fluent]Fluent模拟旋转水槽，科式力怎么设置呀呜呜
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【招生宣传】香港大学土木工程系研究生招生
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        广东以色列理工学院(GTIIT)机械系姜又华博士招收硕博研究生、博士后、科研助理、联培学生
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        2020届物理系飞跃手册（need updating）
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        机械学院杨赓老师团队，机器人方向小组，招本科生参与项目
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        海洋电子与智能系统研究所 徐志伟教授团队 招收硕士、博士
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainPageList">
+                            <div class="mainPageTitle2">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">学习园地</div>
+                                </div>
+                                <div class="mainPageTitleRow">
+                                    <div class="mainPageTitleText">学习</div>
+                                    <div class="mainPageTitleText">外语</div>
+                                    <div class="mainPageTitleText">考研</div>
+                                    <div class="mainPageTitleText">出国</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent2">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">还原被学校隐藏的2020年就业数据</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">求推荐浙大关于历史爱好者学习交流的平台或群组 </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">【志愿咨询】浙江省高考成绩659，全省位次5438</div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        志愿咨询 浙江省高考472分的女生报哪个学校好？ 认真回答有98财富！
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【志愿咨询】福建省理科679分，省排238名
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        找微波传感器方向的大佬帮忙看一个专利，可有偿
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        可用的高速下载Baidu百度网盘文件的方法大全
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        想要在学校报名GRE在家考，有什么合适的考试地点么？
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        数据统计问题
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        志愿咨询
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mainPageList">
+                            <div class="mainPageTitle1">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">感性情感</div>
+                                </div>
+                                <div class="mainPageTitleRow">
+                                    <div class="mainPageTitleText">缘分</div>
+                                    <div class="mainPageTitleText">小屋</div>
+                                    <div class="mainPageTitleText">感性</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent1">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        室友吐槽贴
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【男征女】来不及认真地年轻过，就让我们一起认真地老去
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        喜欢的女生和自己不在一个校区
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【女征男】95年初中教师港大小姐姐真诚交友啦
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        公交车上鼓足勇气找xjj要联系方式之后，感觉好多了
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【男征女】要毕业了！出一个师弟！！
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        [女征男]90漂亮小姐姐找浙大男生~（针对大家看法，一些回应）
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【女征男】我是浙大经济类女硕士，想征个本分的浙大男生。
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        憨憨的决定让这个本就不富裕的家庭雪上加霜
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        师兄师姐又该讨厌我了
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainPageList">
+                            <div class="mainPageTitle1">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">跳蚤市场</div>
+                                </div>
+                                <div class="mainPageTitleRow">
+                                    <div class="mainPageTitleText">数码</div>
+                                    <div class="mainPageTitleText">生活</div>
+                                    <div class="mainPageTitleText">服饰</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent1">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        6000收教育优惠5829的ipad pro 11英寸
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        加湿器，文件袋，电脑包
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        白嫖不成被反撸，230出打卡版的Kindle咪咕，箱说全带一个保护袋和贴膜
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        [水楼][米楼]你不可能要每个人都读懂你，理解你，那样会显得你是一件廉价品
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        毕业出书
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【已出已收到，求沉】代室友出apple pencil一代，顺便收ipad2018pro及二代笔
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        出医学专业书（八年制第三版+第8版）
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        电吹风、macbook电源延长线、宿舍桶装水出水器、接线板电源延长线
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        螺蛳粉（双倍腐竹 双倍快乐）
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        SK2神仙水+大红瓶面霜（全新）
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mainPageList">
+                            <div class="mainPageTitle2">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">求职广场</div>
+                                </div>
+                                <div class="mainPageTitleRow">
+                                    <div class="mainPageTitleText">
+                                        更多
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent2">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【专楼】阿里巴巴校招、内推专楼，专楼启用期间请勿另开新贴
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        想问一下上海的公务员或选调怎么样
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        中金所技术公司（上海金融期货信息技术有限公司）校园招聘
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        英伟达 NVIDIA 2021校招内推
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        大数据发展问题
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        网易等你来加入！！！欢迎大家投递！
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        百度2021校招提前批内推，进度可查（附内推码）
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        阿里巴巴-淘宝技术部校招内推开始啦！免笔试直通面试！急招java工程师、客户端工程师！
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【投递倒计时】🔥2020网易互联网校招内推，云音乐【历史最高HC】；以及有道、杭研、网易传媒等，不影响秋招
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【倒计时2天】2020网易雷火校招内推，热招岗位海量HC，技术&非技术，多部门投递校招不冲突
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainPageList">
+                            <div class="mainPageTitle2">
+                                <div class="mainPageTitleRow">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <div class="mainPageTitleText">实习兼职</div>
+                                </div>
+                                <div class="mainPageTitleRow">
+                                    <div class="mainPageTitleText">更多</div>
+                                </div>
+                            </div>
+                            <div class="mainPageListContent2">
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        新高二英语、数学、地理130-140元每小时
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        诚招心理学被试for [紫金港][7.29-31]（限男生）
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        美国道富银行招聘量化分析全职实习生[更新，目前招8.1开始的长期实习]
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        金联产融实习生招聘
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        医疗投融资平台招实习生啦！
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        滴滴-小桔车服-业务运营日常实习生
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        优范宠物时尚用品店招聘兼职/实习
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        米哈游2021届校招校园大使招募
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        新高一数学、理科130-140元每小时
+                                    </div>
+                                </div>
+                                <div class="mainPageListRow">
+                                    <div class="mainPageListTitle">
+                                        【波士顿科学】招实习
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightPart">
+                    <div class="recommendedFunction">
+                        <div class="mainPageTitle1">
+                            <div class="mainPageTitleRow">
+                                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                <div class="mainPageTitleText">推荐功能</div>
+                            </div>
+                        </div>
+                        <div class="recommendedFunctionContent">
+                            <div class="recommendedFunctionRow">
+                                <div class="recommendedFunctionImage">
+                                    <img src="./images/klxzhnff.png" alt="">
+                                </div>
+                                <div class="recommendedFunctionTitle">移动版问题反馈</div>
+                            </div>
+                            <div class="recommendedFunctionRow">
+                                <div class="recommendedFunctionImage">
+                                    <img src="./images/40suursd.png" alt="">
+                                </div>
+                                <div class="recommendedFunctionTitle">CC98竞猜中心</div>
+                            </div>
+                            <div class="recommendedFunctionRow">
+                                <div class="recommendedFunctionImage">
+                                    <img src="./images/tu2sgf0o.png" alt="">
+                                </div>
+                                <div class="recommendedFunctionTitle">CC98抽卡游戏</div>
+                            </div>
+                            <div class="recommendedFunctionRow">
+                                <div class="recommendedFunctionImage">
+                                    <img src="./images/a55nhhzp.png" alt="">
+                                </div>
+                                <div class="recommendedFunctionTitle">广播台点歌投稿</div>
+                            </div>
+                            <div class="recommendedFunctionRow">
+                                <div class="recommendedFunctionImage">
+                                    <img src="./images/o1b0uogh.png" alt="">
+                                </div>
+                                <div class="recommendedFunctionTitle">认证用户申请</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="schoolNews">
+                        <div class="mainPageTitle2">
+                            <div class="mainPageTitleRow">
+                                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                <div class="mainPageTitleText">校园新闻</div>
+                            </div>
+
+                        </div>
+                        <div class="schoolNewsContent">
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">防骗预警</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">关于公开征求《浙江大学研究生学位申请实施办法（征求意见稿）》意见建议的通知</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">关于公开征求《浙江大学博士硕士学位论文抽检及结果处理办法（征求意见稿）》意见建议的通知</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">关于开展浙江大学2020年“安全生产月”和“安全生产万里行”活动的通知</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">浙江大学第八届教职工代表大会、第二十二届工会会员代表大会第三次会议闭幕</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">后勤集团饮食中心关于紫金港校区西区生活组团食堂启用的通告</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">浙江大学召开2019年全球开放发展大会</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle"> 浙江大学青年教授联谊会换届大会举行</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">浙大“好医护” 赴遵义湄潭开展义诊活动</div>
+                            </div>
+                            <div class="schoolNewsRow">
+                                <div class="schoolNewsTitle">浙江大学二位教授新当选两院院士</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advertisement">
+                        <div class="advertisementImage">
+                            <img src="./images/b5kgr3al.jpg" alt="">
+                        </div>
+                        <div class="adButtons">
+                            <div class="adButtonSelect"></div>
+                            <div class="adButton"></div>
+                            <div class="adButton"></div>
+                            <div class="adButton"></div>
+                            <div class="adButton"></div>
+                            <div class="adButton"></div>
+                        </div>
+                    </div>
+                    <div class="mainPageCount">
+                        <div class="mainPageTitle1">
+                            <div class="mainPageTitleRow">
+                                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                <div class="mainPageTitleText">论坛统计</div>
+                            </div>
+
+                        </div>
+                        <div class="mainPageCountContent">
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">今日帖数</div>
+                                <div class="mainPageCountTitle">3784</div>
+                            </div>
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">今日主题数</div>
+                                <div class="mainPageCountTitle">74</div>
+                            </div>
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">论坛总主题数</div>
+                                <div class="mainPageCountTitle">1555625</div>
+                            </div>
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">论坛总回复数</div>
+                                <div class="mainPageCountTitle">35448660</div>
+                            </div>
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">在线用户数</div>
+                                <div class="mainPageCountTitle">652</div>
+                            </div>
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">总用户数</div>
+                                <div class="mainPageCountTitle">234125</div>
+                            </div>
+                            <div class="mainPageCountRow">
+                                <div class="mainPageCountTitle">欢迎新用户</div>
+                                <div class="mainPageCountTitle">念初</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="miniProgram">
+                        <div class="mainPageTitle2">
+                            <div class="mainPageTitleRow">
+                                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                <div class="mainPageTitleText">CC98小程序</div>
+                            </div>
+
+                        </div>
+                        <div class="miniProgramCode">
+                            <img src="./images/QRCode.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="column">
+                    <div class="footerRow">
+                        <div class="blogroll"> 友情链接</div>
+                        <a href="http://www.zju.edu.cn/" target="_blank"> 浙江大学 </a>|
+                        <a href="http://www.cs.zju.edu.cn/" target="_blank">浙江大学计算机学院</a>|
+                        <a href="http://www.zju88.org/agent/index.do" target="_blank">缥缈水云间 </a>|
+                        <a href="http://www.qsc.zju.edu.cn/" target="_blank">求是潮 </a>|
+                        <a href="http://luckweb.057101.com/bt2/index.asp" target="_blank">缘网 </a>|
+                        <a href="http://www.nexushd.org/login.php" target="_blank">NexusHD </a>|
+                        <a href="https://www.zdgd.zju.edu.cn/" target="_blank">浙江大学广播电视网 </a>|
+                        <a href="http://zy.zju.edu.cn/" target="_blank">浙大搜索</a>
+                    </div>
+                    <div class="footerRow">
+                        Copyright &copy;2003-2020 CC98 Durian v3.2.3 |
+                        <a href="mailto:contact@cc98.org">Email: contact@cc98.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
